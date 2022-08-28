@@ -51,15 +51,3 @@ app.post('/ocr', async (req, res) => {
 app.listen(process.env.EXPRESS_PORT, () => {
   console.log(`Server is running on port ${process.env.EXPRESS_PORT}`);
 });
-
-// exec('tesseract "../img.jpg" - -l eng', (error, stdout, stderr) => {
-//   if (error) {
-//     console.log(`error: ${error.message}`);
-//     return;
-//   }
-//   if (stderr) {
-//     console.log(`stderr: ${stderr}`);
-//     return;
-//   }
-//   console.log(`stdout: ${stdout}`);
-// });
